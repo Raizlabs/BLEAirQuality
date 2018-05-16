@@ -1,0 +1,25 @@
+PODS:
+  - BLEAirQuality (0.1.0):
+    - RZBluetooth
+  - RZBluetooth (1.2.2):
+    - RZBluetooth/Core (= 1.2.2)
+  - RZBluetooth/Core (1.2.2)
+
+DEPENDENCIES:
+  - BLEAirQuality (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RZBluetooth
+
+EXTERNAL SOURCES:
+  BLEAirQuality:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BLEAirQuality: e0cea802e7a501fa18a2427b4241340a68b69989
+  RZBluetooth: 80278a1e941644224554040b7d0f6418b7a99291
+
+PODFILE CHECKSUM: d08cf3f05efe4c9551f77e3937b3479baba4e7f6
+
+COCOAPODS: 1.5.2

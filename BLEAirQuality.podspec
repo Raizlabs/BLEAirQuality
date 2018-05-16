@@ -21,15 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Chris Ballinger/BLEAirQuality'
+  s.homepage         = 'https://github.com/Raizlabs/BLEAirQuality'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chris Ballinger' => 'chris.ballinger@raizlabs.com' }
-  s.source           = { :git => 'https://github.com/Chris Ballinger/BLEAirQuality.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Raizlabs/BLEAirQuality.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform = :osx
   s.osx.deployment_target = "10.10"
+  s.ios.deployment_target = "8.0"
+  s.watchos.deployment_target = "4.0"
 
   s.source_files = 'BLEAirQuality/Classes/**/*'
 
@@ -39,5 +40,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RZBluetooth'
 end

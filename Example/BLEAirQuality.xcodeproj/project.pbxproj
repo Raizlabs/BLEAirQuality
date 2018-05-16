@@ -268,10 +268,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BLEAirQuality_Example/Pods-BLEAirQuality_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BLEAirQuality/BLEAirQuality.framework",
+				"${BUILT_PRODUCTS_DIR}/RZBluetooth/RZBluetooth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BLEAirQuality.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RZBluetooth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

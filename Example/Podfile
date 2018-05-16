@@ -1,4 +1,5 @@
 use_frameworks!
+platform :osx, '10.10'
 
 target 'BLEAirQuality_Example' do
   pod 'BLEAirQuality', :path => '../'
