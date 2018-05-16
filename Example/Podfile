@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BLEAirQuality_Example' do
+  pod 'BLEAirQuality', :path => '../'
+
+  target 'BLEAirQuality_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
