@@ -1,9 +1,10 @@
 # BLEAirQuality
 
-[![CI Status](https://img.shields.io/travis/Chris Ballinger/BLEAirQuality.svg?style=flat)](https://travis-ci.org/Chris Ballinger/BLEAirQuality)
 [![Version](https://img.shields.io/cocoapods/v/BLEAirQuality.svg?style=flat)](https://cocoapods.org/pods/BLEAirQuality)
 [![License](https://img.shields.io/cocoapods/l/BLEAirQuality.svg?style=flat)](https://cocoapods.org/pods/BLEAirQuality)
 [![Platform](https://img.shields.io/cocoapods/p/BLEAirQuality.svg?style=flat)](https://cocoapods.org/pods/BLEAirQuality)
+
+Client library for AQI BLE peripheral: https://github.com/Raizlabs/air_quality_bluetooth_le
 
 ## Example
 
