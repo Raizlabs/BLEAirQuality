@@ -34,26 +34,27 @@ public enum ReadError: Error {
     case rzBluetoothError(NSError)
 }
 
-public typealias ReadingBlock = (Reading?, ReadError?)->Void
-public typealias ScanBlock = ((Peripheral)->Void)
+public typealias ReadingBlock = (Reading?, ReadError?) -> Void
+public typealias ScanBlock = ((Peripheral) -> Void)
 
 public class SensorManager {
 
     private let serviceUUID = CBUUID(string: "22AF619F-4A1B-4BCB-B481-5B13BFE86E94")
     private let centralManager = RZBCentralManager()
-    private var devices: [UUID:RZBPeripheral] = [:]
+    private var devices: [UUID: RZBPeripheral] = [:]
 
     public init() {}
 
     /// callback is on main queue
-    public var scanBlock: ScanBlock? = nil
+    public var scanBlock: ScanBlock?
 
     public func startScan() {
         centralManager.scanForPeripherals(withServices: [serviceUUID], options: nil) { [weak self] (info, error) in
             guard let info = info else {
                 if let error = error {
                     debugPrint("Scan error: \(error)")
-                } else {
+                }
+                else {
                     debugPrint("Unknown scan error")
                 }
                 return
@@ -84,7 +85,8 @@ public class SensorManager {
                 if let error = error {
                     debugPrint("Read error \(error)")
                     completion(nil, ReadError.rzBluetoothError(error as NSError))
-                } else {
+                }
+                else {
                     completion(nil, ReadError.unknown)
                 }
                 return
